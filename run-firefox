@@ -1,0 +1,4 @@
+#!/bin/sh
+export DISPLAY=:0.0
+/usr/local/bin/firefox > /dev/null &
+

@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ `id -u` -eq "0" ]; then
+    echo "Running the Webbrowser as root is not encouraged."
+    echo "Aborting."
+    exit 1;
+fi
+
+if [ -x /usr/local/bin/sudo ]; then
+        sudo /usr/local/libexec/jail-firefox-exec $1 2>1 > /dev/null
+else
+    echo "Need either security/doas or security/sudo to proceed."
+fi
+
+
