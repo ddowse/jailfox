@@ -1,3 +1,0 @@
-#!/bin/sh
-bastille start jailfox 2>1 > /dev/null
-bastille cmd jailfox su firefox /bin/sh /home/firefox/run-firefox $1

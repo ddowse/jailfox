@@ -1,6 +1,4 @@
-PKG firefox xauth noto
+PKG firefox xauth noto-base noto-emoji
 CMD pw useradd -n firefox -m -w random 
-CP run-firefox /home/firefox/
-CMD chown firefox:firefox /home/firefox/run-firefox
 CMD mkdir -m 777 /tmp/.X11-unix
 FSTAB /tmp/.X11-unix /tmp/.X11-unix nullfs ro 0 0

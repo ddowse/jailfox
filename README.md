@@ -1,5 +1,16 @@
 # Firefox
-Bastille template to bootstrap Firefox and run it.
+Bastille template to bootstrap Firefox.
+
+## Description
+
+When applied to a container, this template will   
+   
+ - install firefox,noto fonts package and helper utility
+ - create a user named `firefox` 
+ - will make the local X11 Socket available inside the jail.
+
+To run the jailed firefox from the host system please visit 
+[jailfox-install](https://github.com/ddowse/jailfox-install) for further instructions.
 
 ## Bootstrap
 ```shell
@@ -10,16 +21,3 @@ bastille bootstrap https://github.com/ddowse/jailfox
 ```shell
 bastille template TARGET ddowse/jailfox
 ```
-
-## Adjust
-```shell
-# See BastilleBSD Readme https://github.com/BastilleBSD/bastille#zfs-support for details about $bastille_prefix 
-install $bastille_prefix/templates/ddowse/jailfox/jailfox /usr/local/bin/
-install $bastille_prefix/templates/ddowse/jailfox/jail-firefox-exec /usr/local/libexec
-```
-
-## Run
-```shell
-jailfox
-```
-
