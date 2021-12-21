@@ -3,14 +3,14 @@ Bastille template to bootstrap Firefox.
 
 ## Description
 
-When applied to a container, this template will install 
+When applied to a container, this template will install with dependencies
  
 - firefox 
 - noto fonts ( All the glyphs for the modern web )
 - xauth
 - mesa-dri ( 3D Support if available )
-- create a user named `firefox` 
-- will make the local X11 Socket available inside the jail.
+- add user `firefox` 
+- gives access to `/tmp/.X11-unix/:0`  from inside the jail.
 
 To run the jailed firefox from the host system please visit 
 [jailfox-install](https://github.com/ddowse/jailfox-install) for further instructions.
@@ -64,9 +64,9 @@ bastille restart TARGET
 
 ## Hint
 
-To avoid frustration, i recommend to snapshot the target jail before applying   
-the template. This way makes it easy to rollback if you want to start fresh jail.   
-You could also create a snapshot of the target jail, after the template is   
-applied, to always have a fresh webbrowser at your disposal. 
+To avoid frustration, i recommend to snapshot the target jail before applying
+the template.   This way makes it easy to rollback if you want to start fresh jail.
+You could also create a snapshot of the target jail, after the template is
+applied, to always have a fresh webbrowser at your disposal.
 
-
+And feedback on this template is welcome. 
