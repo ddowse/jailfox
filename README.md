@@ -64,9 +64,9 @@ bastille restart TARGET
 
 ## Hint
 
-To avoid frustration, i recommend to snapshot the target jail before applying
-the template.   This way makes it easy to rollback if have to start all over again.
-You could also create a snapshot of the target jail, after the template is
+To avoid frustration, I recommend to ZFS snapshot the target jail before applying
+the BastilleBSD template. This way it makes it very easy to start all over again by rolling back to the snapshot. 
+You could also create a ZFS snapshot of the target jail, after the template is
 applied, to always have a fresh webbrowser at your disposal.
 
 And feedback on this template is welcome. 
