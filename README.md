@@ -36,8 +36,8 @@ add include $devfsrules_unhide_basic
 add include $devfsrules_unhide_login
 
 # Remove comments in the next 2 lines to allow access to soundcard
-add path 'mixer*' unhide
-add path 'dsp*'   unhide
+#add path 'mixer*' unhide
+#add path 'dsp*'   unhide
 
 # Remove comments in the next 2 lines to allow access to Webcam
 #add path 'cuse*'  unhide
