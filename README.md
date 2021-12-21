@@ -65,7 +65,7 @@ bastille restart TARGET
 ## Hint
 
 To avoid frustration, i recommend to snapshot the target jail before applying
-the template.   This way makes it easy to rollback if you want to start fresh jail.
+the template.   This way makes it easy to rollback if have to start all over again.
 You could also create a snapshot of the target jail, after the template is
 applied, to always have a fresh webbrowser at your disposal.
 
