@@ -10,7 +10,7 @@ When applied to a container, this template will install with dependencies
 - xauth
 - mesa-dri ( 3D Support if available )
 - add user `firefox` 
-- gives access to `/tmp/.X11-unix/:0`  from inside the jail.
+- gives access to `/tmp/.X11-unix/:0=`  from inside the jail.
 
 To run the jailed firefox from the host system please visit 
 [jailfox-install](https://github.com/ddowse/jailfox-install) for further instructions.
