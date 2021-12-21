@@ -51,7 +51,7 @@ add include $devfsrules_unhide_login
 #add path 'pci'    unhide
 
 # Remove comments in the next 2 lines to allow access to USB devices.
-# Mendatory if Webcam and Headset is connected via USB 
+# Mandatory if Webcam and Headset is connected via USB 
 #add path 'usb'    unhide
 #add path 'usb/*'  unhide
 ```
