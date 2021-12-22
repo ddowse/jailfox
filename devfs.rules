@@ -3,22 +3,26 @@ add include $devfsrules_hide_all
 add include $devfsrules_unhide_basic
 add include $devfsrules_unhide_login
 
-# Remove commentsign in the next 2 lines to allow access to soundcard
-add path 'mixer*' unhide
-add path 'dsp*'   unhide
+# Remove comments in the next 2 lines to allow access to soundcard
+#add path 'mixer*' unhide
+#add path 'dsp*'   unhide
 
-# Remove commentsign in the next 2 lines to allow access to Webcam
+# Remove comment in the next line to allow access to all output/input sound devices
+# This is mandatory to get microphone working
+#add path 'sndstat' unhide
+
+# Remove comments in the next 2 lines to allow access to Webcam
 #add path 'cuse*'  unhide
 #add path 'video'  unhide
 
-# Remove commentsign in the next 5 lines to allow access to Videocard for 3D
+# Remove comments in the next 5 lines to allow access to Videocard for 3D
 #add path 'dri'    unhide
 #add path 'dri/*'  unhide 
 #add path 'drm'    unhide
 #add path 'drm/*'  unhide
 #add path 'pci'    unhide
 
-# Remove commentsign in the next 2 lines to allow access to USB devices.
-# Mendatory if Webcam and Headset is connected via USB 
+# Remove comments in the next 2 lines to allow access to USB devices.
+# Mandatory if Webcam and Headset is connected via USB 
 #add path 'usb'    unhide
 #add path 'usb/*'  unhide

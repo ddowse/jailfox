@@ -41,6 +41,10 @@ add include $devfsrules_unhide_login
 #add path 'mixer*' unhide
 #add path 'dsp*'   unhide
 
+# Remove comment in the next line to allow access to all output/input sound devices
+# This is mandatory to get microphone working
+#add path 'sndstat' unhide
+
 # Remove comments in the next 2 lines to allow access to Webcam
 #add path 'cuse*'  unhide
 #add path 'video'  unhide
