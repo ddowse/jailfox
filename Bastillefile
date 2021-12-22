@@ -2,7 +2,7 @@ ARG WITH_USB
 ARG WITH_3D
 PKG firefox xauth noto-basic noto-emoji noto-extra 
 CMD pw useradd -n firefox -m -w random 
-CMD if [ -n ${WITH_USB} ]; then pw groupadd usb -M firefox; fi
-CMD if [ -n ${WITH_3D} ]; then pw groupmod video -m firefox; pkg install -y mesa-dri; fi
+CMD if [ -n "${WITH_USB}" ]; then if [ ${WITH_USB} -eq 1 ]; then echo "Adding USB Group"; pw groupadd usb -M firefox; fi; fi
+CMD if [ -n "${WITH_3D}" ]; then if [ ${WITH_3D} -eq 1 ]; then echo "Adding 3D Support"; pw groupmod video -m firefox; pkg install -y mesa-dri; fi; fi
 CMD mkdir -m 777 /tmp/.X11-unix
 FSTAB /tmp/.X11-unix /tmp/.X11-unix nullfs ro 0 0
