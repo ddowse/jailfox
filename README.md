@@ -64,11 +64,11 @@ bastille restart TARGET
 
 ## 3D Acceleration 
 
-Settings -> Scroll down Uncheck "Use recommended performance settings".   
+Settings -> Scroll down *Uncheck* "Use recommended performance settings".   
 
 ![Firefox Settings](ff-performance.png)
 
-Open `about:config` and `set gfx.webrender.all` to `true`
+Open `about:config` and set `gfx.webrender.all` to `true`
 
 Restart Firefox
 
