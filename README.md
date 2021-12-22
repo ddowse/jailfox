@@ -10,7 +10,9 @@ When applied to a container, this template will install with dependencies
 - xauth
 - mesa-dri ( 3D Support if available )
 - add user `firefox` 
-- gives access to `/tmp/.X11-unix/:0=`  from inside the jail.
+- gives access to the socket `/tmp/.X11-unix/:0=`  from inside the jail.
+
+This all adds up to a container size of: **~1.8 Gigabyte**
 
 To run the jailed firefox from the host system please visit 
 [jailfox-install](https://github.com/ddowse/jailfox-install) for further instructions.
@@ -30,7 +32,7 @@ have found working are listed in the `devfs.rules` file in this repo.
 Add the content of `devfs.rules` to your existing `/etc/devfs.rules`.
 
 ```sh
-[bastille_jail=99]
+[bastille_xorg=99]
 add include $devfsrules_hide_all
 add include $devfsrules_unhide_basic
 add include $devfsrules_unhide_login
