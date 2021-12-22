@@ -1,5 +1,8 @@
-# Firefox
-Bastille template to bootstrap Firefox.
+ <img align="left" width="100" height="100" src="https://i.imgur.com/9P8PTZv.png">
+
+# Jailfox 
+
+[BastilleBSD](https://bastillebsd.org) template to bootstrap Firefox.
 
 ## Description
 
@@ -10,7 +13,7 @@ When applied to a container, this template will install with dependencies
 - xauth
 - mesa-dri ( 3D Support if available )
 - add user `firefox` 
-- gives access to the socket `/tmp/.X11-unix/:0=`  from inside the jail.
+- gives access to the socket `/tmp/.X11-unix/:0=` from inside the jail.
 
 This all adds up to a container size of: **~1.8 Gigabyte**
 
