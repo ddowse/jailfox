@@ -57,14 +57,14 @@ add include $devfsrules_unhide_login
 ```
 
 ```shell
-bastille config TARGET set devfs_rules 99
+bastille config TARGET set devfs_ruleset 99
 service devfs restart
 bastille restart TARGET
 ```
 
 ## 3D Acceleration 
 
-Settings -> Scroll down *Uncheck* "Use recommended performance settings".   
+Go to `Settings` scroll down then **Uncheck** "Use recommended performance settings".   
 
 ![Firefox Settings](ff-performance.png)
 
