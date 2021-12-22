@@ -62,6 +62,16 @@ service devfs restart
 bastille restart TARGET
 ```
 
+## 3D Acceleration 
+
+Settings -> Scroll down Uncheck "Use recommended performance settings".   
+
+![Firefox Settings](ff-performance.png)
+
+Open `about:config` and `set gfx.webrender.all` to `true`
+
+Restart Firefox
+
 ## Hint
 
 To avoid frustration, i recommend to snapshot the target jail before applying
